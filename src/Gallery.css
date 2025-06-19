@@ -1,0 +1,96 @@
+/* Gallery.css */
+.gallery-section {
+  background-color: #872657;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.gallery-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #FA95AF;
+}
+
+/* New layout styles */
+.gallery-layout-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 30px; /* Space between carousel and text block */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.carousel-wrapper {
+  flex: 1; /* Allows carousel to take available space, adjust as needed */
+  min-width: 300px; /* Minimum width before wrapping */
+  max-width: 600px; /* Retain max-width for carousel */
+  margin: 0; /* Reset margin if previously centered */
+}
+
+.gallery-text-content-wrapper {
+  flex: 1; /* Allows text block to take available space */
+  min-width: 300px; /* Minimum width before wrapping */
+  display: flex;
+  flex-direction: column; /* Stack text items vertically */
+  gap: 20px; /* Space between stacked text items */
+}
+
+.gallery-text-item {
+  background-color: rgba(250, 149, 175, 0.1); /* Optional: slight background for text items */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.gallery-text-item h2 { /* Changed from h1 */
+  color: #FA95AF;
+  font-size: 20px; 
+  margin-bottom: 8px;
+}
+
+.gallery-text-item p {
+  color: #FFFFFF;
+  font-size: 15px; 
+  line-height: 1.5;
+}
+
+/* Carousel image styling */
+.carousel-wrapper .carousel .slide img {
+  max-height: 470px; /* Adjust as needed */
+  width: auto !important; 
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments for Gallery */
+@media (max-width: 768px) {
+  .gallery-layout-container {
+    flex-direction: column; /* Stack carousel and text block on smaller screens */
+    align-items: center; /* Center items when stacked */
+  }
+
+  .carousel-wrapper {
+    max-width: 95%;
+    margin-bottom: 20px;
+    
+  }
+
+  .gallery-text-content-wrapper {
+    width: 100%; /* Take full width when stacked */
+  }
+
+  .gallery-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-wrapper .carousel .slide img {
+    max-height: 400px; 
+  }
+
+  .gallery-text-item h2 {
+    font-size: 18px;
+  }
+
+  .gallery-text-item p {
+    font-size: 14px;
+  }
+}

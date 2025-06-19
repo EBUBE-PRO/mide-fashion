@@ -1,0 +1,68 @@
+/* About.css */
+.about-section {
+  background-color: #FA95AF;
+  padding: 40px 20px;
+  text-align: center; 
+}
+
+.about-title {
+  color:black; 
+  margin-bottom: 30px;
+  font-size: 2.0em; 
+}
+
+.about-content-container {
+  display: flex;
+  align-items: center; /* Vertically align items in the middle */
+  justify-content: center; /* Center content if it doesn't fill the space */
+  gap: 30px; /* Space between image and text */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  text-align: left; /* Reset text-align for content within this container */
+}
+
+.about-image {
+  max-width: 340px;
+  border-radius: 15px;
+  max-height: 500px; /* Adjusted slightly */
+  object-fit: cover; /* Ensures image covers the area well */
+}
+
+.about-text-wrapper {
+  flex: 1; /* Allows text to take up available space */
+  max-width: 600px;
+  min-width: 300px; 
+}
+
+.about-paragraph {
+  line-height: 1.7; 
+  color: #333; 
+  font-size: 1.1em; 
+  text-align: justify; 
+  hyphens: auto; /* Helps with word breaking in justified text */
+  margin-right: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-content-container {
+    flex-direction: column; /* Stack image and text on smaller screens */
+    text-align: center; /* Center text when stacked */
+  }
+
+  .about-image {
+    margin-bottom: 20px; /* Add space below image when stacked */
+    max-width: 80%; /* Allow image to be a bit larger on mobile */
+  }
+
+  .about-text-wrapper {
+    max-width: 90%;
+  }
+
+  .about-paragraph {
+    text-align: left; /* Left align paragraph on mobile for easier reading than justify */
+  }
+
+  .about-title {
+    font-size: 2em;
+  }
+}

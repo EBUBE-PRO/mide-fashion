@@ -1,0 +1,17 @@
+
+
+.logo:hover {
+  opacity:  whitesmoke; 
+  cursor: pointer;
+  
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  
+}
+
+/* You can move other styles here, for example: */
+.footer-container {
+  background-color: #872657;
+  color: #FFFFFF;
+  padding: 30px 10px;
+  /* ... and so on ... */
+}
